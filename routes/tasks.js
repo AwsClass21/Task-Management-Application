@@ -93,3 +93,7 @@ router.delete('/:id', (req, res) => {
 });
 
 module.exports = router;
+<<<<<<< HEAD
+=======
+
+>>>>>>> parent of 02d59de (Revert "created actual folder with proj name")
