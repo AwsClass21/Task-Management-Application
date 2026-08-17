@@ -19,4 +19,3 @@ function requireAuth(req, res, next) {
 }
 
 module.exports = { requireAuth, JWT_SECRET };
-
