@@ -66,4 +66,3 @@ registerForm.addEventListener('submit', async (e) => {
     authMessage.textContent = 'Something went wrong. Please try again.';
   }
 });
-
