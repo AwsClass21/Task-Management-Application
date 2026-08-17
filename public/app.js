@@ -136,6 +136,20 @@ filterBtns.forEach((btn) => {
   });
 });
 
+const allFilterBtn = document.querySelector('.filter-btn[data-filter="all"]');
+
+if (allFilterBtn) {
+  allFilterBtn.classList.add('active');
+}
+
+logoutBtn.addEventListener('click', async () => {
+  await fetch('/api/auth/logout', { method: 'POST' });
+  window.location.href = '/index.html';
+});
+
+checkAuth();
+loadTasks();
+
 logoutBtn.addEventListener('click', async () => {
   await fetch('/api/auth/logout', { method: 'POST' });
   window.location.href = '/index.html';
